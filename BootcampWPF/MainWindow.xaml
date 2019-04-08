@@ -1,0 +1,20 @@
+﻿<Window x:Class="BootcampWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BootcampWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+        <TextBox x:Name="SecondNumber_Txt" HorizontalAlignment="Left" Height="38" Margin="59,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="Number_Txt_PreviewTextInput"/>
+        <TextBox x:Name="FirstNumber_Txt" HorizontalAlignment="Left" Height="37" Margin="59,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="Number_Txt_PreviewTextInput"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="59,55,0,0" TextWrapping="Wrap" Text="First Number" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="59,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="88"><Run Text="Second Number"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="Process_Btn" Content="Process" HorizontalAlignment="Left" Margin="295,99,0,0" VerticalAlignment="Top" Width="104" Height="40" Click="Process_Btn_Click" />
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="59,217,0,0" TextWrapping="Wrap" Text="Result :" VerticalAlignment="Top" RenderTransformOrigin="-0.318,0.683"/>
+        <TextBlock x:Name="Result_TxtBlock" HorizontalAlignment="Left" Margin="147,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35" Foreground="Chartreuse"/>
+
+    </Grid>
+</Window>
